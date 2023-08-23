@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Bulb</title>
+    <style>
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+    }
+
+    .btn{
+        padding: 20px;
+        background-color: aqua;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body style="background-color: rgb(248, 248, 248);">
+    <img id="bulb" src="download off bulb.jpg" class="center">
+    <button id="chalJa" class="center btn">Turn on</button>
+
+    <script>
+        let btn=document.getElementById("chalJa")
+        let bulb=document.getElementById("bulb")
+        btn.addEventListener("click",chalGaya)
+
+        function chalGaya(e){
+            if(btn.textContent.includes("on")){
+                bulb.src="light-bulb-on-white-.jpg" 
+                btn.textContent="Turn off"
+            }else{
+                bulb.src="download off bulb.jpg"</div>
